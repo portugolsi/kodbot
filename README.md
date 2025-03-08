@@ -1,14 +1,15 @@
 # Projeto: KodBot - Jogo em Pygame Zero
 
 ## Descrição
-KodBot é um jogo criado com Pygame Zero onde o jogador controla um personagem que pode atirar projéteis, enfrentar inimigos e explorar um mapa com câmera seguindo o personagem. 
+KodBot é um jogo criado com PG Zero onde o jogador controla um Robô que pode atirar projéteis para enfrentar inimigos a fim de se manter salvo.
 
 ## Como Jogar
 - **Setas direcionais**: Movem o personagem
-- **Barra de espaço**: Atira projéteis
-- **ESC**: Sai do jogo
+- **X**: Atira projéteis
 - **Mouse**: Para clicar nos botões do menu
-- **Tecla X**: Dispara projétil
+
+Mantenha-se em cima da plataforma e sem tocar nos inimigos para se manter vivo. 
+Para isso, será necessário muita habilidade se desviando deles e atirando par as destuir.
 
 ## Estrutura do Projeto
 ```
@@ -16,8 +17,10 @@ KodBot é um jogo criado com Pygame Zero onde o jogador controla um personagem q
 ├── menu.py        # Tela de menu
 ├── player.py      # Controle do jogador
 ├── ball.py        # Comportamento dos projéteis
-├── enemy.py       # Inteligência do inimigo
-├── assets/        # Pasta com sprites e áudio
+├── enemy.py       # Comportamento do inimigo
+├── assets/        # Pasta com sprites e áudios que usei no projeto
+|__ images/        # Animações dos personagens
+|__ sounds/        # Música e efeitos sonoros utilizados no jogo
 └── README.md      # Documentação do projeto
 ```
 
@@ -36,9 +39,9 @@ KodBot é um jogo criado com Pygame Zero onde o jogador controla um personagem q
 - **Bibliotecas**: Pygame Zero, PyGame (Rect)
 
 ## Melhorias Futuras
-- Implementar sistema de pontuação mais eficiente
+- Implementar sistema de pontuação 
 - Criar diferentes tipos de projéteis
-- Adicionar Juices
+- Adicionar Gemes Juices para melhorar a experiência no jogo
 
 ## Autor
 - **Jonadabe Santana (Dabe)**

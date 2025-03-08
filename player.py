@@ -14,10 +14,10 @@ class Player:
                       "player_walking_l06.png","player_walking_l07.png","player_walking_l08.png",
                       ],
         }
-        self.actor = Actor("player_idle01") 
-        self.actor.pos = (x, y)
-        self.velocity_y = 0
-        self.on_ground = False
+        self.actor = Actor("player_idle01")  
+        self.actor.pos = (x, y) 
+        self.velocity_y = 0 
+        self.on_ground = False 
         self.current_animation = "idle"
         self.animation_index = 0
         self.animation_timer = 0 
@@ -40,6 +40,7 @@ class Player:
 
         self.velocity_y += 0.5
         self.actor.y += self.velocity_y
+        
         if self.actor.y + self.actor.height // 2 >= platform.top and self.actor.x > platform.left and self.actor.x < platform.right:
             self.actor.y = platform.top - self.actor.height // 2
             self.velocity_y = 0
